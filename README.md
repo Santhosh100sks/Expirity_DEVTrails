@@ -1,146 +1,121 @@
-# Expirity_DEVTrails
-# Submission for the DEV Trails
-# AI-Powered Points-Based Insurance for Delivery Partners
+Expirity_DEVTrails
+Entry at the DEV Trails.
+AI-based Delivery Partner Insurance on Points.
+1. Requirement, Persona and Application Workflow.
+Persona
+This will be a solution aimed at food delivery partners which operate on services such as Zomato and Swiggy. These employees rely on the daily wages and are extremely sensitive to outside interference like weather, traffic and strikes.
 
-## 1. Requirement, Persona, and Application Workflow
+Problem Requirement
+The uncontrollable external conditions cause loss of income to delivery partners. This is aimed at creating a system that guarantees their profits through compensation in case of such upheavals through a well-designed and equitable system.
 
-### Persona
-This solution is designed for food delivery partners working on platforms like Zomato and Swiggy. These workers depend on daily earnings and are highly affected by external disruptions such as weather, traffic, and strikes.
+Proposed Approach
+The system brings in a points-based insurance system where the delivery partners will gain points based on punctuality and regularity of work. These points are a buffer in the form of finance and can be redeemed in case of loss of income in the event of confirmed disruption.
 
-### Problem Requirement
-Delivery partners experience income loss due to uncontrollable external conditions. The goal is to build a system that protects their earnings by providing compensation during such disruptions, using a structured and fair mechanism.
+Workflow
+User Registration
+Delivery partner registers and subscribes to a weekly insurance plan.
 
-### Proposed Approach
-The system introduces a points-based insurance model where delivery partners earn points through consistent work and reliability. These points act as a financial buffer and can be redeemed when income loss occurs due to verified disruptions.
+Points Accumulation
+Points are earned based on:
 
-### Workflow
+Number of deliveries
+Working hours
+Consistency, Reliability.
+Checking-in of the activity by means of GPS tracking to guarantee real work attendance.
+Disruption Occurs
+External factors like weather problems, traffic jam or strikes take place.
 
-1. User Registration  
-   Delivery partner registers and subscribes to a weekly insurance plan.
+Claim Submission
+The delivery partner will report the problem via the application by choosing the type of disruption (weather, traffic, strikes, and others). The user has an option to post some supporting evidence which could be a photo or some other news coverage to reinforce the claim. This data is also synthesized with third-party data and activity tracking in order to verify it properly and impartially.
 
-2. Points Accumulation  
-   Points are earned based on:
-   - Number of deliveries  
-   - Working hours  
-   - Consistency and reliability
-   - Verified activity through GPS-based tracking to ensure genuine work participation
+Validation
+The system confirms the assertion with the help of third party information and activity of users.
 
-3. Disruption Occurs  
-   External events such as weather issues, traffic congestion, or strikes occur.
+Compensation
+It is given out in points or payout on proven loss of income.
 
-4. Claim Submission  
-   The delivery partner reports the issue through the application by selecting the disruption type (weather, traffic, strikes, or others).
-   The user can optionally upload supporting   evidence such as photos or relevant news links to strengthen the claim.
-   This evidence is combined with external data sources and activity tracking to ensure accurate and fair validation.
+2. Weekly Premium Model, Parametric Triggers and Platform Choice.
+Weekly Premium Model
+Its system has a weekly subscription that comes in accordance with the earnings cycle of gig workers.
 
-6. Validation  
-   The system validates the claim using external data and user activity.
+Premium range: ₹50 – ₹100 per week
+Pricing is dynamic and it is based on:
+Location risk level
+Frequency of disruption in history.
+Parametric Triggers
+The system identifies disruptions with external triggers that are predefined:
 
-7. Compensation  
-   Points or payout is provided based on validated income loss.
-
----
-
-## 2. Weekly Premium Model, Parametric Triggers, and Platform Choice
-
-### Weekly Premium Model
-The system follows a weekly subscription model aligned with gig workers’ earnings cycle.
-
-- Premium range: ₹50 – ₹100 per week  
-- Pricing is dynamic and depends on:
-  - Location risk level  
-  - Historical disruption frequency  
-
-### Parametric Triggers
-
-The system uses predefined external triggers to identify disruptions:
-
-- Weather conditions (rain, heat, pollution)  
-- Traffic congestion  
-- Strikes or curfews  
-
-### Validation Logic
+Weather (rain, heat, pollution).
+Traffic congestion
+Strikes or curfews
+Validation Logic
 A claim is approved only when:
-- A disruption is detected, and  
-- The worker’s activity level is significantly reduced  
 
-### Platform Choice
+A disruption is detected, and
+The level of activity of the worker is decreased greatly.
+Platform Choice
+Mobile application is selected as the major platform.
 
-Mobile application is chosen as the primary platform.
+Rationale: Delivery partners mostly operate with smartphones, and a mobile platform will allow submitting claims in real-time and monitoring and receiving notifications.
 
-Reason:
-Delivery partners primarily use smartphones, and a mobile platform enables real-time claim submission, tracking, and notifications.
+3. AI/ML Integration Plan
+Risk Assessment
+The historical data will be analyzed using machine learning models to reveal the high-risk areas and forecast possible disruptions.
 
----
+Dynamically computed premiums.
+The AI models will adjust weekly premium on the basis of:
 
-## 3. AI/ML Integration Plan
-
-### Risk Assessment
-Machine learning models will analyze historical data to identify high-risk zones and predict potential disruptions.
-
-### Dynamic Premium Calculation
-AI models will adjust weekly premium based on:
-- Location  
-- Past risk patterns  
-- Frequency of disruptions  
-
-### Fraud Detection
+Location
+Past risk patterns
+Frequency of disruptions
+Fraud Detection
 The system will detect:
-- Duplicate claims  
-- Abnormal claim patterns  
-- Location inconsistencies (GPS mismatch)  
 
-### Smart Claim Validation
+Duplicate claims
+Abnormal claim patterns
+Positioning errors (GPS error)
+Smart Claim Validation
 AI combines:
-- External trigger data  
-- User activity data  
-to ensure that payouts are given only for genuine income loss.
 
----
+External trigger data
+User activity data
+to guarantee that genuine loss of income is paid out.
+4. Technology and Development Strategy.
 
-## 4. Tech Stack and Development Plan
-
-### Tech Stack
-
+Tech Stack
 Frontend:
-- React (Web) or Flutter (Mobile)
+React (Web) or Flutter (Mobile)
 
 Backend:
-- Node.js with Express
+Node.js with Express
 
 Database:
-- MongoDB
+MySQL
 
 AI/ML:
-- Python with Scikit-learn
+Python with Scikit-learn
 
 APIs:
-- Weather API (OpenWeather)
-- Mock traffic and disruption APIs
+Weather API (OpenWeather)
+Mock disruption API and mock traffic API.
 
----
-
-### Development Plan
-
+Development Plan
 Phase 1 (Weeks 1–2):
-- Requirement analysis  
-- System design  
-- Basic prototype  
 
+Requirement analysis
+System design
+Basic prototype
 Phase 2 (Weeks 3–4):
-- Backend development  
-- Claim management system  
-- Dynamic pricing implementation  
 
+Backend development
+Claim management system
+Implementation of dynamic pricing.
 Phase 3 (Weeks 5–6):
-- AI model integration  
-- Fraud detection system  
-- Dashboard and payout simulation  
 
----
-
-## 5. Additional Considerations
-
-- The system strictly focuses on loss of income and excludes health, vehicle, or accident-related coverage.  
-- The points-based model encourages consistent work behavior while providing financial protection.  
-- The design ensures fairness by relying on behavior and activity data rather than personal attributes.  
+AI model integration
+Fraud detection system
+Dash and payout simulation.
+5. Additional Considerations
+The system highly emphasises on loss of income and does not cover health, vehicle, or accident-related cover.
+The points-based model will promote regular working behavior and offer financial security.
+The architecture is fair as it bases on the behavior and activity information as opposed to individual attributes.
